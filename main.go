@@ -29,6 +29,11 @@ func main() {
 		log.Fatal(err)
 	}
 
+	_, err = s.Write([]byte{0x41, 0x54, 0x5a, 0x0D, 0x0A})
+	if err != nil {
+		log.Fatal(err)
+	}
+
 
 	fmt.Println("KADSBUGGEL")
 
