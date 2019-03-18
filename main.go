@@ -17,7 +17,7 @@ func main() {
 
 	time.Sleep(2 * time.Second)
 
-	_, err = s.Write([]byte("+++"))
+	_, err = s.Write([]byte{0x2B, 0x2B, 0x2B, 0x0D, 0x0A})
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -25,6 +25,7 @@ func main() {
 	time.Sleep(2 * time.Second)
 
 	_, err = s.Write([]byte("ATH^M"))
+	[]byte{0x41, 0x54, 0x48, 0x5E, 0x4D, 0x0D, 0x0A}
 	if err != nil {
 		log.Fatal(err)
 	}
