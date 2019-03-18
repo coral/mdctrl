@@ -17,7 +17,7 @@ func main() {
 
 	time.Sleep(2 * time.Second)
 
-	_, err = s.Write([]byte{0x2B, 0x2B, 0x2B, 0x0D, 0x0A})
+	_, err = s.Write([]byte{0x2B, 0x2B, 0x2B})
 	if err != nil {
 		log.Fatal(err)
 	}
