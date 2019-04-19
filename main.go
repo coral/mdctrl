@@ -15,7 +15,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	time.Sleep(2 * time.Second)
+	time.Sleep(3 * time.Second)
 
 	_, err = s.Write([]byte{0x2B, 0x2B, 0x2B})
 	if err != nil {
@@ -35,7 +35,6 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
 
 	fmt.Println("KADSBUGGEL")
 
