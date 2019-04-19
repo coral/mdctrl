@@ -22,16 +22,16 @@ func main() {
 		log.Fatal(err)
 	}
 
-	time.Sleep(2 * time.Second)
+	time.Sleep(1500 * time.Millisecond)
 
-	_, err = s.Write([]byte{0x41, 0x54, 0x48, 0x0D, 0x0A})
+	_, err = s.Write([]byte{0x41, 0x54, 0x48, 0x0D})
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	time.Sleep(1 * time.Second)
+	time.Sleep(1500 * time.Millisecond)
 
-	_, err = s.Write([]byte{0x41, 0x54, 0x5a, 0x0D, 0x0A})
+	_, err = s.Write([]byte{0x41, 0x54, 0x4F, 0x0D})
 	if err != nil {
 		log.Fatal(err)
 	}
